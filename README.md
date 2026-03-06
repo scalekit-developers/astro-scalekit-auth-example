@@ -1,7 +1,41 @@
-# Astro "Build a Blog" Project - Completed
+# Astro Blog with ScaleKit Integration
 
-This is the project you'll build with the [Astro Tutorial](https://docs.astro.build/en/tutorial/0-introduction/). Use this code to compare to your own, or explore to see how the basics of a blog are built in Astro!
+This is a sample Astro blog site starter from the [Astro Tutorial](https://docs.astro.build/en/tutorial/0-introduction/). It demonstrates how ScaleKit (https://docs.scalekit.com/authenticate/fsa/quickstart/) can be easily integrated for authentication.
 
-This branch contains the state of the project after completing the basic tutorial, [Unit 6.3](https://docs.astro.build/en/tutorial/6-islands/3/).
+## Features
 
-The [`content collections`](https://github.com/withastro/blog-tutorial-demo/tree/content-collections) branch is the completed project branch after the optional Content Collections extension in unit [6.4](https://docs.astro.build/en/tutorial/6-islands/4/).
+- Complete blog implementation following the Astro "Build a Blog" tutorial
+- ScaleKit authentication integration with:
+  - Login/logout functionality
+  - Protected API routes
+  - User session management
+  - Server-side rendering with Astro's Node adapter
+
+## Setup
+
+1. Install dependencies:
+```bash
+pnpm install
+```
+
+2. Configure your ScaleKit credentials in environment variables (see `.env.example`)
+
+3. Start the development server:
+```bash
+pnpm dev
+```
+
+## ScaleKit Integration
+
+This project demonstrates how to:
+- Configure ScaleKit with Astro's server-side rendering
+- Set up authentication middleware
+- Create protected API endpoints
+- Display user information in the UI
+- Handle login/logout flows
+
+For more details on integrating ScaleKit, visit the [ScaleKit Quickstart Guide](https://docs.scalekit.com/authenticate/fsa/quickstart/).
+
+## Tutorial Progress
+
+This branch contains the state of the project after completing the basic tutorial, [Unit 6.3](https://docs.astro.build/en/tutorial/6-islands/3/), with additional ScaleKit authentication features added.

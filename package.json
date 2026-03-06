@@ -10,8 +10,10 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/node": "^9.1.4",
     "@astrojs/preact": "^4.1.1",
     "@astrojs/rss": "^4.0.12",
+    "@scalekit-sdk/node": "^2.3.0",
     "astro": "^5.14.4",
     "preact": "^10.27.2"
   }

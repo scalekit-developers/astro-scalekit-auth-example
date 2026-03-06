@@ -2,6 +2,12 @@
 import Menu from "./Menu.astro";
 import Navigation from "./Navigation.astro";
 import ThemeIcon from "./ThemeIcon.astro";
+
+interface Props {
+  user?: { sub: string; email?: string; name?: string };
+}
+
+const { user } = Astro.props;
 ---
 
 <header>
@@ -11,6 +17,14 @@ import ThemeIcon from "./ThemeIcon.astro";
       <Menu />
     </div>
     <Navigation />
+    <div class="auth-nav">
+      {user ? (
+        <span class="user-name">{user.name ?? user.email}</span>
+        <a href="/api/auth/logout">Sign out</a>
+      ) : (
+        <a href="/api/auth/login">Sign in</a>
+      )}
+    </div>
   </nav>
 </header>
 
@@ -18,5 +32,14 @@ import ThemeIcon from "./ThemeIcon.astro";
   div {
     display: flex;
     justify-content: space-between;
+  }
+  .auth-nav {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  .user-name {
+    font-size: 0.875rem;
+    opacity: 0.8;
   }
 </style>
