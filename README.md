@@ -2,6 +2,8 @@
 
 This is a sample Astro blog site starter from the [Astro Tutorial](https://docs.astro.build/en/tutorial/0-introduction/). It demonstrates how ScaleKit (https://docs.scalekit.com/authenticate/fsa/quickstart/) can be easily integrated for authentication.
 
+Scalekit provides auth and actions on behalf of users, with 500+ connectors and 20,000+ tools.
+
 ## Features
 
 - Complete blog implementation following the Astro "Build a Blog" tutorial
